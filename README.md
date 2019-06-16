@@ -1,5 +1,25 @@
 # How to Run
 
+# Glossary
+
+| Portuguese    | English     |
+| ------------- |-------------|
+| Conferência   | Conference  |
+| Tracks        | Tracks      |
+| Sessão        | Session     |
+| Palestra      | Lecture     |
+
+# Modeling
+
+1. Conference        -> n Tracks
+2. Track             -> 2 Sessions (Morning and Afternoon)
+3. Session           -> n Lectures
+4. Morning Session   -> Starts at 9am and Finish at 12pm
+5. Afternoon Session -> Starts at 1pm and Finish before 5pm
+6. Networking Event  -> Start After 4pm and Before or at 5pm
+7. Common Lecture    -> duration on your own title in Minutes
+8. Lightning Lecture -> duration of 5 minutes
+
 ---
 
 # Organização de palestras de uma conferência
