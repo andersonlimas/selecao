@@ -1,5 +1,8 @@
+require_relative 'base'
+
 module Services
   class ListProposals
+    include Base
 
     def initialize(proposal_path)
       @proposal_path = proposal_path
@@ -18,10 +21,6 @@ module Services
     def validate_proposal_path
       raise_msg('Invalid Proposal Path')        unless File.exist?(proposal_path)
       raise_msg('Invalid Proposal: Empty file') if     File.empty?(proposal_path)
-    end
-
-    def raise_msg(msg)
-      raise ArgumentError.new(msg)
     end
   end
 end
