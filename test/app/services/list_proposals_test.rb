@@ -36,7 +36,7 @@ describe ::Services::ListProposals, '#call' do
           'How to be rich 45min',
           'Not anymore 30min',
           'Ruby is Awesome lightning',
-          'Erros comuns em Ruby 45min'
+          'Errors in Ruby 45min'
         ]
 
         _(subject.call).must_equal expected_result

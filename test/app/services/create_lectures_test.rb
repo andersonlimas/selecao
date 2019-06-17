@@ -13,7 +13,7 @@ describe ::Services::CreateLectures, '#call' do
           'How to be rich 45min',
           'Not anymore 30min',
           'Ruby is Awesome lightning',
-          'Erros comuns em Ruby 45min'
+          'Errors in Ruby 45min'
         ]
 
         subject = subject_instance(proposal_list)
@@ -23,7 +23,7 @@ describe ::Services::CreateLectures, '#call' do
           build_lecture('How to be rich 45min', 45),
           build_lecture('Not anymore 30min', 30),
           build_lecture('Ruby is Awesome lightning', 5),
-          build_lecture('Erros comuns em Ruby 45min', 45)
+          build_lecture('Errors in Ruby 45min', 45)
         ]
 
         _(subject.call).must_equal expected_result
@@ -36,7 +36,7 @@ describe ::Services::CreateLectures, '#call' do
         proposal_list = [
           'How to be Roman 60min',
           'Ruby is Awesome lightning',
-          'Erros comuns em Ruby'
+          'Errors in Ruby'
         ]
         subject = subject_instance(proposal_list)
 
