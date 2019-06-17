@@ -49,8 +49,8 @@ Sample:
 - [x] Extract all proposal lectures from some file_path
 - [x] Create Lectures from the extracted result from the list_proposals service
 - [x] Add Lectures for Morning or Afternoon Session
-- [ ] Create a Track with 2 Sessions
-- [ ] Show the Organized List of Lectures in your correct Session
+- [x] Create a Track with 2 Sessions
+- [x] Show the Organized List of Lectures in your correct Session
 
 ---
 
