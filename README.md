@@ -4,15 +4,23 @@
 
 `rake organize_lectures[PROPOSALS_PATH]`
 
+Sample:
+
+`rake organize_lectures[proposals.txt]`
+
 ## Tests
 
 #### Unit files
 
 `ruby -Ilib:test test/TEST_FILE_PATH`
 
+Sample:
+
+`ruby -Ilib:test test/app/services/create_afternoon_session_test.rb`
+
 #### All
 
-`rake run_tests`
+`rake run_tests` or `rake`
 
 # Glossary
 
