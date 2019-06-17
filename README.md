@@ -1,5 +1,19 @@
 # How to Run
 
+## Project
+
+`rake organize_lectures[PROPOSALS_PATH]`
+
+## Tests
+
+#### Unit files
+
+`ruby -Ilib:test test/TEST_FILE_PATH`
+
+#### All
+
+`rake run_tests`
+
 # Glossary
 
 | Portuguese    | English     |
@@ -11,6 +25,8 @@
 
 # Modeling
 
+## General
+
 1. Conference        -> n Tracks
 2. Track             -> 2 Sessions (Morning and Afternoon)
 3. Session           -> n Lectures
@@ -19,6 +35,14 @@
 6. Networking Event  -> Start After 4pm and Before or at 5pm
 7. Common Lecture    -> duration on your own title in Minutes
 8. Lightning Lecture -> duration of 5 minutes
+
+## Steps
+
+- [x] Extract all proposal lectures from some file_path
+- [x] Create Lectures from the extracted result from the list_proposals service
+- [x] Add Lectures for Morning or Afternoon Session
+- [ ] Create a Track with 2 Sessions
+- [ ] Show the Organized List of Lectures in your correct Session
 
 ---
 
