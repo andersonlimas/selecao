@@ -6,7 +6,7 @@ describe ::Services::CreateAfternoonSession, '#call' do
 
   describe 'when given a valid lecture_list' do
 
-    describe 'when given lectures which total of duration is SMALLER than 300 minutes' do
+    describe 'when given lectures which total of duration is SMALLER than 240 minutes' do
 
       it 'return a morning session with your lectures' do
         lecture_list = [
@@ -25,7 +25,7 @@ describe ::Services::CreateAfternoonSession, '#call' do
       end
     end
 
-    describe 'when given lectures which total of duration is BIGGER than 300 minutes' do
+    describe 'when given lectures which total of duration is BIGGER than 240 minutes' do
 
       it 'return a morning session with your lectures' do
         lecture_list = [
@@ -35,8 +35,6 @@ describe ::Services::CreateAfternoonSession, '#call' do
           build_lecture('Ruby is Awesome lightning', 5),
           build_lecture('Errors in Ruby 45min', 45),
           build_lecture('How to be a better programmer 55min', 55),
-          build_lecture('Why I love Ruby? 60min', 60),
-          build_lecture('Extra Lecture 60min', 60)
         ]
 
         subject  = subject_instance(lecture_list)

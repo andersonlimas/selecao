@@ -37,7 +37,7 @@ module Services
       afternoon_events = build_formatted_events_from_session(:afternoon,afternoon_session)
 
 
-      Track.new('Track A', morning_events, afternoon_events)
+      Track.new(track_name, morning_events, afternoon_events)
     end
 
     private

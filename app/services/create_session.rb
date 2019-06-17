@@ -16,7 +16,7 @@ module Services
       session_lectures = lecture_list.reduce([]) do |memo, lecture|
         remaning_duration_block -= lecture.duration
 
-        break memo if remaning_duration_block < 0
+        break memo if remaning_duration_block <= 0
 
         memo << lecture
       end

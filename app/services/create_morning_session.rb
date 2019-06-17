@@ -12,9 +12,9 @@ module Services
       Time.new(today.year, today.month, today.day, 9,0,0)
     end
 
-    # Block with 4 hours
+    # Block with 3 hours
     def duration_block_in_minutes
-      240
+      180
     end
   end
 end
